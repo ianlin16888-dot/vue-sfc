@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/vue'
+import vue from '@vitejs/plugin-vue' // 💡 關鍵：這裡必須是 @vitejs/plugin-vue 
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/vue-sfc/'  // 💡 確保前後都有斜線！
+  base: '/vue-sfc/'
 })
